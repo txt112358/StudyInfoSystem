@@ -11,8 +11,20 @@ public class Person {
 	private String personID;// Record the ID of the person
 	private boolean sex;// TRUE if male, FALSE if female
 	private Date birthday;// Record the birthday of the person
-	// TODO specific infomation about differnt type of persons
+	// TODO specific infomation about different type of persons
 
+	/**
+	 * Initialize the Person class by detailed information
+	 * 
+	 * @param personName
+	 *            The name of the person
+	 * @param personID
+	 *            The ID number of the person
+	 * @param sex
+	 *            The sex of the person
+	 * @param birthday
+	 *            THe birthday of the person
+	 */
 	public Person(String personName, String personID, boolean sex, Date birthday) {
 		this.setName(personName);
 		this.setID(personID);

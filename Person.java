@@ -25,6 +25,7 @@ public abstract class Person {
 	 *            The name of the person
 	 */
 	public void setName(String name) {
+		assert name != null : "The input name cannot be null";
 		this.personName = new String(name);
 	}
 
@@ -41,6 +42,7 @@ public abstract class Person {
 	 *            The ID of the person
 	 */
 	public void setID(String personID) {
+		assert personID != null : "The input ID cannot be null";
 		this.personID = new String(personID);
 	}
 

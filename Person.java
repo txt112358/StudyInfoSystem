@@ -6,11 +6,12 @@
  * @author Tang, Xintian
  *
  */
-public class Person<diff extends PersonModel> {
+public class Person {
 	private String personName;// Record the name of the person
 	private String personID;// Record the ID of the person
 	private boolean sex;// TRUE if male, FALSE if female
 	private Date birthday;// Record the birthday of the person
+	//TODO specific infomation about differnt type of persons
 
 	/**
 	 * Initialize the Person class by another Person class
@@ -88,5 +89,4 @@ public class Person<diff extends PersonModel> {
 	public void setBirthday(Date birthday) {
 		this.birthday = new Date(birthday);
 	}
-
 }

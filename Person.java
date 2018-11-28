@@ -13,6 +13,13 @@ public class Person {
 	private Date birthday;// Record the birthday of the person
 	// TODO specific infomation about differnt type of persons
 
+	public Person(String personName, String personID, boolean sex, Date birthday) {
+		this.setName(personName);
+		this.setID(personID);
+		this.setSex(sex);
+		this.setBirthday(birthday);
+	}
+
 	/**
 	 * Initialize the Person class by another Person class
 	 * 
@@ -20,7 +27,7 @@ public class Person {
 	 *            The Person class to be initialized
 	 */
 	public Person(Person person) {
-		assert person != null : "The input Person canot be null";
+		assert person != null : "The input Person cannot be null";
 		this.setName(person.getName());
 		this.setID(person.getID());
 		this.setSex(person.isMale());
@@ -31,7 +38,7 @@ public class Person {
 	 * @return The name of the person
 	 */
 	public String getName() {
-		assert this.personName != null : "The name field is null";
+		assert this.personName != null : "The name field cannot be null";
 		return new String(this.personName);
 	}
 
@@ -48,7 +55,7 @@ public class Person {
 	 * @return The ID of the person
 	 */
 	public String getID() {
-		assert this.personID != null : "The ID field is null";
+		assert this.personID != null : "The ID field cannot be null";
 		return new String(this.personID);
 	}
 

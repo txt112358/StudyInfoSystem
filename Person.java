@@ -11,7 +11,7 @@ public class Person {
 	private String personID;// Record the ID of the person
 	private boolean sex;// TRUE if male, FALSE if female
 	private Date birthday;// Record the birthday of the person
-	//TODO specific infomation about differnt type of persons
+	// TODO specific infomation about differnt type of persons
 
 	/**
 	 * Initialize the Person class by another Person class
@@ -20,6 +20,7 @@ public class Person {
 	 *            The Person class to be initialized
 	 */
 	public Person(Person person) {
+		assert person != null : "The input Person canot be null";
 		this.setName(person.getName());
 		this.setID(person.getID());
 		this.setSex(person.isMale());

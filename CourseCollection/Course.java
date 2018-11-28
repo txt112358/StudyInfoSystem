@@ -9,7 +9,7 @@ import People.Teacher;
  * @author Tang, Xintian
  *
  */
-public abstract class Course {
+public class Course {
 	private String courseID;
 	private String courseName;
 	private Teacher teacher;

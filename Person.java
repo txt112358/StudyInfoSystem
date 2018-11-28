@@ -6,11 +6,24 @@
  * @author Tang, Xintian
  *
  */
-public abstract class Person {
+public class Person<diff extends PersonModel> {
 	private String personName;// Record the name of the person
 	private String personID;// Record the ID of the person
 	private boolean sex;// TRUE if male, FALSE if female
 	private Date birthday;// Record the birthday of the person
+
+	/**
+	 * Initialize the Person class by another Person class
+	 * 
+	 * @param person
+	 *            The Person class to be initialized
+	 */
+	public Person(Person person) {
+		this.setName(person.getName());
+		this.setID(person.getID());
+		this.setSex(person.isMale());
+		this.setBirthday(person.getBirthday());
+	}
 
 	/**
 	 * @return The name of the person

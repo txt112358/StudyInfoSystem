@@ -9,8 +9,9 @@
 public abstract class School {
 	private String schoolName;
 	private String schoolID;
-	// TODO add schoolLeader, schoolViceLeader[]
-
+	//TODO add schoolLeader, schoolViceLeader[];
+	
+	
 	/**
 	 * @return The name of the school
 	 */
